@@ -1,0 +1,13 @@
+<p><font color="green"><%= flash[:success] %></font></p>
+
+<p><strong>Title: </strong><%= @book.title %></p>
+
+<p><strong>Body: </strong> <%= @book.body %></p>
+
+<span>
+    <%=link_to "Edit", edit_book_path,class:"edit_#{@book.id}"%>
+</span>
+<span>|</span>
+<span>
+    <%=link_to "Back", books_path,class:"back" %>
+</span>
