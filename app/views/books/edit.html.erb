@@ -10,7 +10,7 @@
 
     <p><%= f.submit 'Update Book' %></p>
 
-    <span><%=link_to "Show", book_path,class:"show"%> %></span>
+    <span><%=link_to "Show", book_path,class:"show_#{@book.id}" %></span>
     <span>|</span>
     <span><%=link_to "Back", books_path,class:"back" %></span>
 
